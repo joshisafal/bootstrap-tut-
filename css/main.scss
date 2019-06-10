@@ -81,18 +81,18 @@ header {
     }
  }
 
-  section.hero {
-      padding-top: 8em;
-      background: url('../imgs/yellow.jpg');
-      background-size: cover;
-  
+section.hero {
+    padding-top: 8em;
+    background: url('../imgs/yellow.jpg');
+    background-size: cover;
 
-      p {
-      width: 75%;
-      font-size: 1.2rem;
-      margin-bottom: 0;
+
+    p {
+        width: 75%;
+        font-size: 1.2rem;
+        margin-bottom: 0;
     }
-  }
+}
 
   section.sidebar, section.suscribe {
       font-size: 0.9rem;
