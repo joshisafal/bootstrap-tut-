@@ -92,6 +92,11 @@ section.hero {
         font-size: 1.2rem;
         margin-bottom: 0;
     }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
 }
 
   section.sidebar, section.suscribe {
@@ -140,14 +145,26 @@ section.hero {
 
    .wrapper {
        grid-template-columns: 70% auto;
-       grid-template-rows: 60% auto;
+       grid-template-rows: 50% auto;
        grid-template-areas: 
        "hero sidebar"
        "hero suscribe";
        height: 100vh;
    }
 
-   section.hero {
+    section.hero {
        grid-area: hero;
    }
+
+    section {
+       display: grid;
+       grid-template-rows: auto;
+       align-items: center;
+   }   
 }    
+@media only screen and (min-width: 1800px) {
+
+   html {
+       font-size: 21px;
+   }
+}

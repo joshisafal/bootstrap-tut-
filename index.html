@@ -24,9 +24,11 @@
         <div class="clipper">
            <h1>GO GO GO</h1>  
            </div>
+           <div class="anim-panel">
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint vel dolor, in aliquid pariatur libero fuga eum consequuntur 
              sunt voluptates!</p>
            <a href="#" class="read-btn primary">Read</a>  
+      </div>
       </div>
     </section>
     <section class="sidebar">
@@ -34,20 +36,53 @@
          <div class="clipper">
             <h2>Featured</h2>
          </div>
+         <div class="anim-panel">
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, aliquid?</p>
         <a href="#" class="read-btn">GO</a>
        </div>
-
+       </div>
     </section>
     <section class="suscribe">
         <div class="inner">
           <div class="clipper">
               <h2>SUb</h2>
           </div>
+          <div class="anim-panel">
           <input type="text" name="mail" placeholder="email">
           <button class="cta">now</button>
         </div>
+        </div>
     </section>
   </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+<script>
+    
+    var tl = new TimelineMax();
+
+    tl.staggerFrom('section', 2, {
+      opacity: 0,
+      scale: .5,
+      ease: Power2.easeOut
+    }, 0.2)
+
+    tl.staggerFrom('h1, h2', 0.5, {
+      opacity: 0,
+      y: -40,
+      ease: Power2.easeInO
+    }, 0.2, "-=2")
+
+    tl.staggerFrom('.anim-panel', 1, {
+        opacity: 0,
+        y: -40,
+        ease: Power2.easeInO
+      }, 0.2, "-=1.5")
+
+
+
+
+</script>
+
 </body>
 </html>
